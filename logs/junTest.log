@@ -1,0 +1,53 @@
+{"level":"info","timestamp":"2023-10-23T13:55:37.701+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-23T13:55:37.710+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-23T13:55:37.710+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disalbe"}
+{"level":"error","timestamp":"2023-10-23T13:55:37.711+0500","msg":"sql.Open","error":"sql: unknown driver \"postgres\" (forgotten import?)"}
+{"level":"info","timestamp":"2023-10-23T13:58:46.125+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-23T13:58:46.127+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-23T13:58:46.127+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disalbe"}
+{"level":"error","timestamp":"2023-10-23T13:58:46.127+0500","msg":"sql.Open","error":"sql: unknown driver \"postgres\" (forgotten import?)"}
+{"level":"info","timestamp":"2023-10-23T14:01:26.630+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-23T14:01:26.633+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-23T14:01:26.635+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-23T14:01:26.636+0500","msg":"Logger loaded"}
+{"level":"info","timestamp":"2023-10-23T14:56:57.766+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-23T14:56:57.773+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-23T14:56:57.778+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-23T14:56:57.778+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"error","timestamp":"2023-10-23T14:56:57.898+0500","msg":"create database","error":"pq: syntax error at or near \"NOT\""}
+{"level":"fatal","timestamp":"2023-10-23T14:56:57.901+0500","msg":"postgre connection","error":"pq: syntax error at or near \"NOT\""}
+{"level":"info","timestamp":"2023-10-23T14:58:16.912+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-23T14:58:16.921+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-23T14:58:16.924+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-23T14:58:16.924+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"error","timestamp":"2023-10-23T14:58:16.995+0500","msg":"create database","error":"pq: syntax error at or near \"DATABASEjuntest\""}
+{"level":"fatal","timestamp":"2023-10-23T14:58:16.995+0500","msg":"postgre connection","error":"pq: syntax error at or near \"DATABASEjuntest\""}
+{"level":"info","timestamp":"2023-10-23T15:00:05.696+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-23T15:00:05.700+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-23T15:00:05.701+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-23T15:00:05.701+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-23T15:00:06.444+0500","msg":"database loaded"}
+{"level":"info","timestamp":"2023-10-23T15:00:48.021+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-23T15:00:48.025+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-23T15:00:48.025+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-23T15:00:48.026+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"error","timestamp":"2023-10-23T15:00:48.091+0500","msg":"create database","error":"pq: database \"juntest\" already exists"}
+{"level":"fatal","timestamp":"2023-10-23T15:00:48.091+0500","msg":"postgre connection","error":"pq: database \"juntest\" already exists"}
+{"level":"info","timestamp":"2023-10-23T15:05:16.869+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-23T15:05:16.873+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-23T15:05:16.874+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-23T15:05:16.874+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"error","timestamp":"2023-10-23T15:05:16.944+0500","msg":"create database","error":"pq: database \"juntest\" already exists"}
+{"level":"fatal","timestamp":"2023-10-23T15:05:16.945+0500","msg":"postgre connection","error":"pq: database \"juntest\" already exists"}
+{"level":"info","timestamp":"2023-10-23T15:05:37.217+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-23T15:05:37.224+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-23T15:05:37.229+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-23T15:05:37.229+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"error","timestamp":"2023-10-23T15:05:37.306+0500","msg":"create database","error":"pq: database \"juntest\" already exists"}
+{"level":"fatal","timestamp":"2023-10-23T15:05:37.307+0500","msg":"postgre connection","error":"pq: database \"juntest\" already exists"}
+{"level":"info","timestamp":"2023-10-23T15:10:05.306+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-23T15:10:05.310+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-23T15:10:05.310+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-23T15:10:05.311+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-23T15:10:05.899+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-23T15:10:05.899+0500","msg":"database loaded"}

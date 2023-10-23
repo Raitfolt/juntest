@@ -1,0 +1,13 @@
+version: "3.9"
+
+volumes:
+  pg_volume:
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=pguser
+      - POSTGRES_PASSWORD=pgpass
+    ports:
+      - "5432:5432"
