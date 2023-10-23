@@ -57,11 +57,33 @@ func New(log *zap.Logger, cfg *config.Config) (*Storage, error) {
 	return &Storage{DB: db}, nil
 }
 
-//TODO: realize method for storage: NewPerson
-//TODO: realize method for storage: DeletePersonByID
-//TODO: realize method for storage: ChangePerson
-//TODO: realize method for storage:
+func (s *Storage) NewPerson(name, surname, patronymic string) (int64, error) {
+	var id int64
+	err := s.DB.QueryRow("INSERT INTO persons (name, surname, patronymic) VALUES ($1, $2, $3) RETURNING id",
+		name, surname, patronymic).Scan(&id)
+	if err != nil {
+		return 0, err
+	}
 
-/*func (s *Storage) NewPerson(name, surname, patronymic string) (int64, error){
-	stmt, err := s.DB.Prepare("INSERT INTO ")
-}*/
+	return id, nil
+}
+
+func (s *Storage) UpdateGender(id int, gender string) error {
+	_, err := s.DB.Exec("UPDATE persons SET gender = $1 WHERE id = $2", gender, id)
+	return err
+}
+
+func (s *Storage) UpdateAge(id int, age int) error {
+	_, err := s.DB.Exec("UPDATE persons SET age = $1 WHERE id = $2", age, id)
+	return err
+}
+
+func (s *Storage) UpdateNationality(id int, nationality string) error {
+	_, err := s.DB.Exec("UPDATE persons SET nationality = $1 WHERE id = $2", nationality, id)
+	return err
+}
+
+func (s *Storage) DeletePerson(id int) error {
+	_, err := s.DB.Exec("DELETE FROM persons WHERE id = $1", id)
+	return err
+}
