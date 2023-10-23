@@ -8,8 +8,14 @@ import (
 )
 
 type Config struct {
-	LogPath string `env:"LOG_PATH"`
-	Address string `env:"ADDRESS"`
+	LogPath          string `env:"LOG_PATH"`
+	Host             string `env:"HOST"`
+	Port             string `env:"PORT"`
+	PostgresHost     string `env:"POSTGRES_HOST"`
+	PostgresPort     int32  `env:"POSTGRES_PORT"`
+	PostgresUser     string `env:"POSTGRES_USER"`
+	PostgresPassword string `env:"POSTGRES_PASSWORD"`
+	PostgresDB       string `env:"POSTGRES_DB"`
 }
 
 func MustLoad() *Config {
