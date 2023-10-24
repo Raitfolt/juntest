@@ -51,3 +51,149 @@
 {"level":"info","timestamp":"2023-10-23T15:10:05.311+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
 {"level":"info","timestamp":"2023-10-23T15:10:05.899+0500","msg":"database created"}
 {"level":"info","timestamp":"2023-10-23T15:10:05.899+0500","msg":"database loaded"}
+{"level":"info","timestamp":"2023-10-24T08:31:15.970+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T08:31:15.976+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T08:31:15.983+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T08:31:15.988+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T08:31:16.196+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T08:31:16.900+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T08:31:17.002+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T08:31:17.002+0500","msg":"database loaded"}
+{"level":"fatal","timestamp":"2023-10-24T08:31:17.003+0500","msg":"server failed"}
+{"level":"info","timestamp":"2023-10-24T08:31:58.720+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T08:31:58.727+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T08:31:58.728+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T08:31:58.729+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T08:31:59.257+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T08:31:59.644+0500","msg":"database created"}
+{"level":"error","timestamp":"2023-10-24T08:31:59.678+0500","msg":"create table","error":"pq: relation \"persons\" already exists"}
+{"level":"fatal","timestamp":"2023-10-24T08:31:59.686+0500","msg":"postgre connection","error":"pq: relation \"persons\" already exists"}
+{"level":"info","timestamp":"2023-10-24T08:37:37.969+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T08:37:37.970+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T08:37:37.970+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T08:37:37.970+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T08:37:38.231+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T08:37:38.549+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T08:37:38.649+0500","msg":"table cleared"}
+{"level":"info","timestamp":"2023-10-24T08:37:38.693+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T08:37:38.694+0500","msg":"database loaded"}
+{"level":"fatal","timestamp":"2023-10-24T08:37:38.698+0500","msg":"server failed","error":"listen tcp: address 0.0.0.0: missing port in address"}
+{"level":"info","timestamp":"2023-10-24T08:58:15.389+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T08:58:15.394+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T08:58:15.395+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T08:58:15.395+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T08:58:15.627+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T08:58:15.973+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T08:58:15.994+0500","msg":"table cleared"}
+{"level":"info","timestamp":"2023-10-24T08:58:16.032+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T08:58:16.033+0500","msg":"database loaded"}
+{"level":"fatal","timestamp":"2023-10-24T08:58:16.034+0500","msg":"server failed","error":"listen tcp: address 0.0.0.0: missing port in address"}
+{"level":"info","timestamp":"2023-10-24T08:58:56.814+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T08:58:56.814+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T08:58:56.815+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T08:58:56.815+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T08:58:57.677+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T08:58:57.971+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T08:58:58.003+0500","msg":"table cleared"}
+{"level":"info","timestamp":"2023-10-24T08:58:58.037+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T08:58:58.037+0500","msg":"database loaded"}
+{"level":"fatal","timestamp":"2023-10-24T08:58:58.037+0500","msg":"server failed","error":"listen tcp: address 0.0.0.08080: missing port in address"}
+{"level":"info","timestamp":"2023-10-24T08:59:12.549+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T08:59:12.549+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T08:59:12.549+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T08:59:12.549+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T08:59:13.943+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T08:59:14.246+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T08:59:14.271+0500","msg":"table cleared"}
+{"level":"info","timestamp":"2023-10-24T08:59:14.300+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T08:59:14.300+0500","msg":"database loaded"}
+{"level":"fatal","timestamp":"2023-10-24T08:59:14.300+0500","msg":"server failed","error":"listen tcp: address 0.0.0.08080: missing port in address"}
+{"level":"info","timestamp":"2023-10-24T08:59:37.845+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T08:59:37.846+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T08:59:37.846+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T08:59:37.846+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T08:59:38.248+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T08:59:38.501+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T08:59:38.517+0500","msg":"table cleared"}
+{"level":"info","timestamp":"2023-10-24T08:59:38.559+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T08:59:38.559+0500","msg":"database loaded"}
+{"level":"info","timestamp":"2023-10-24T09:18:03.760+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T09:18:03.763+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T09:18:03.763+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T09:18:03.763+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T09:18:04.013+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T09:18:04.326+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T09:18:04.355+0500","msg":"table cleared"}
+{"level":"info","timestamp":"2023-10-24T09:18:04.394+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T09:18:04.394+0500","msg":"database loaded"}
+{"level":"info","timestamp":"2023-10-24T09:18:04.395+0500","msg":"starting server","address":"0.0.0.0:8080"}
+{"level":"info","timestamp":"2023-10-24T09:20:02.693+0500","msg":"add new person"}
+{"level":"info","timestamp":"2023-10-24T09:20:02.693+0500","msg":"body decoded","name":"stepan","surname":"napets"}
+{"level":"info","timestamp":"2023-10-24T09:20:03.286+0500","msg":"get age","name":"stepan","age":0}
+{"level":"info","timestamp":"2023-10-24T09:20:03.664+0500","msg":"get gender","name":"stepan","gender":""}
+{"level":"info","timestamp":"2023-10-24T09:20:04.145+0500","msg":"get nationality","name":"stepan","age":""}
+{"level":"info","timestamp":"2023-10-24T09:21:01.303+0500","msg":"add new person"}
+{"level":"info","timestamp":"2023-10-24T09:21:01.304+0500","msg":"body decoded","name":"Dmitriy","surname":"napets"}
+{"level":"info","timestamp":"2023-10-24T09:21:01.813+0500","msg":"get age","name":"Dmitriy","age":0}
+{"level":"info","timestamp":"2023-10-24T09:21:02.518+0500","msg":"get gender","name":"Dmitriy","gender":""}
+{"level":"info","timestamp":"2023-10-24T09:21:03.000+0500","msg":"get nationality","name":"Dmitriy","age":""}
+{"level":"info","timestamp":"2023-10-24T09:40:06.066+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T09:40:06.070+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T09:40:06.071+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T09:40:06.071+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T09:40:06.302+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T09:40:06.649+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T09:40:06.672+0500","msg":"table cleared"}
+{"level":"info","timestamp":"2023-10-24T09:40:06.729+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T09:40:06.729+0500","msg":"database loaded"}
+{"level":"info","timestamp":"2023-10-24T09:40:06.729+0500","msg":"starting server","address":"0.0.0.0:8080"}
+{"level":"info","timestamp":"2023-10-24T09:40:14.893+0500","msg":"add new person"}
+{"level":"info","timestamp":"2023-10-24T09:40:14.896+0500","msg":"body decoded","name":"Dmitriy","surname":"napets"}
+{"level":"info","timestamp":"2023-10-24T09:40:16.049+0500","msg":"get age","name":"Dmitriy","age":42}
+{"level":"info","timestamp":"2023-10-24T09:40:16.950+0500","msg":"get gender","name":"Dmitriy","gender":""}
+{"level":"info","timestamp":"2023-10-24T09:40:18.078+0500","msg":"get nationality","name":"Dmitriy","age":""}
+{"level":"info","timestamp":"2023-10-24T10:44:03.268+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T10:44:03.274+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T10:44:03.274+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T10:44:03.274+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T10:44:03.458+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T10:44:03.741+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T10:44:03.757+0500","msg":"table cleared"}
+{"level":"info","timestamp":"2023-10-24T10:44:03.797+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T10:44:03.797+0500","msg":"database loaded"}
+{"level":"info","timestamp":"2023-10-24T10:44:03.797+0500","msg":"starting server","address":"0.0.0.0:8080"}
+{"level":"info","timestamp":"2023-10-24T10:44:08.645+0500","msg":"add new person"}
+{"level":"info","timestamp":"2023-10-24T10:44:08.647+0500","msg":"body decoded","name":"Dmitriy","surname":"napets"}
+{"level":"info","timestamp":"2023-10-24T10:44:09.311+0500","msg":"get age","name":"Dmitriy","age":42}
+{"level":"info","timestamp":"2023-10-24T10:44:09.373+0500","msg":"get age","name":"Dmitriy","gender":""}
+{"level":"info","timestamp":"2023-10-24T10:44:09.672+0500","msg":"get nation","name":"Dmitriy","gender":"UA"}
+{"level":"info","timestamp":"2023-10-24T10:46:42.757+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T10:46:42.758+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T10:46:42.758+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T10:46:42.759+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T10:46:43.167+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T10:46:43.490+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T10:46:43.512+0500","msg":"table cleared"}
+{"level":"info","timestamp":"2023-10-24T10:46:43.550+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T10:46:43.550+0500","msg":"database loaded"}
+{"level":"info","timestamp":"2023-10-24T10:46:43.550+0500","msg":"starting server","address":"0.0.0.0:8080"}
+{"level":"info","timestamp":"2023-10-24T10:47:13.172+0500","msg":"add new person"}
+{"level":"info","timestamp":"2023-10-24T10:47:13.174+0500","msg":"body decoded","name":"Egor","surname":"napets"}
+{"level":"info","timestamp":"2023-10-24T10:47:13.640+0500","msg":"get age","name":"Egor","age":43}
+{"level":"info","timestamp":"2023-10-24T10:47:13.707+0500","msg":"get gender","name":"Egor","gender":""}
+{"level":"info","timestamp":"2023-10-24T10:47:14.059+0500","msg":"get nation","name":"Egor","gender":"RU"}
+{"level":"info","timestamp":"2023-10-24T10:51:15.717+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T10:51:15.718+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T10:51:15.718+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T10:51:15.718+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T10:51:16.094+0500","msg":"database cleared"}
+{"level":"info","timestamp":"2023-10-24T10:51:16.351+0500","msg":"database created"}
+{"level":"info","timestamp":"2023-10-24T10:51:16.366+0500","msg":"table cleared"}
+{"level":"info","timestamp":"2023-10-24T10:51:16.396+0500","msg":"table persons created"}
+{"level":"info","timestamp":"2023-10-24T10:51:16.397+0500","msg":"database loaded"}
+{"level":"info","timestamp":"2023-10-24T10:51:16.397+0500","msg":"starting server","address":"0.0.0.0:8080"}
+{"level":"info","timestamp":"2023-10-24T10:51:20.976+0500","msg":"add new person"}
+{"level":"info","timestamp":"2023-10-24T10:51:20.978+0500","msg":"body decoded","name":"Egor","surname":"napets"}
+{"level":"info","timestamp":"2023-10-24T10:51:21.525+0500","msg":"get age","name":"Egor","age":43}
+{"level":"info","timestamp":"2023-10-24T10:51:21.937+0500","msg":"get gender","name":"Egor","gender":"male"}
+{"level":"info","timestamp":"2023-10-24T10:51:22.316+0500","msg":"get nation","name":"Egor","gender":"RU"}

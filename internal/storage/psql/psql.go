@@ -39,6 +39,13 @@ func New(log *zap.Logger, cfg *config.Config) (*Storage, error) {
 	}
 	log.Info("database created")
 
+	_, err = db.Exec("DROP TABLE persons")
+	if err != nil {
+		log.Error("clear table", zap.String("error", err.Error()))
+		return nil, err
+	}
+	log.Info("table cleared")
+
 	_, err = db.Exec(`CREATE TABLE persons(
 		id SERIAL PRIMARY KEY,
 		name VARCHAR(255),
