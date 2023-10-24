@@ -5,6 +5,8 @@ import (
 
 	"github.com/Raitfolt/juntest/config"
 	"github.com/Raitfolt/juntest/internal/httpServer/handlers/add"
+	"github.com/Raitfolt/juntest/internal/httpServer/handlers/all"
+	"github.com/Raitfolt/juntest/internal/httpServer/handlers/del"
 	"github.com/Raitfolt/juntest/internal/logger"
 	"github.com/Raitfolt/juntest/internal/storage/psql"
 	"github.com/go-chi/chi/v5"
@@ -32,6 +34,8 @@ func main() {
 	router.Use(middleware.Recoverer)
 
 	router.Post("/add", add.New(log, db))
+	router.Post("/delete", del.Delete(log, db))
+	router.Get("/all", all.List(log, db))
 
 	address := cfg.Host + ":" + cfg.Port
 	srv := &http.Server{

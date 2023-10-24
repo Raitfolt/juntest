@@ -1,4 +1,4 @@
-package add
+package change
 
 import (
 	"encoding/json"
@@ -21,9 +21,9 @@ type PersonSaver interface {
 	NewPerson(name, surname, patronymic string, age int, gender, nationality string) (int64, error)
 }
 
-func New(log *zap.Logger, personSaver PersonSaver) http.HandlerFunc {
+func Change(log *zap.Logger, personSaver PersonSaver) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		log.Info("add new person")
+		log.Info("change person information")
 
 		var person Person
 
