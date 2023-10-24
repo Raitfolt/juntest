@@ -35,20 +35,6 @@ func New(log *zap.Logger, cfg *config.Config) (*Storage, error) {
 		return nil, err
 	}
 
-	/*_, err = db.Exec("DROP DATABASE " + cfg.PostgresDB)
-	if err != nil {
-		log.Error("clear database", zap.String("error", err.Error()))
-		return nil, err
-	}
-	log.Info("database cleared")
-
-	_, err = db.Exec("CREATE DATABASE " + cfg.PostgresDB)
-	if err != nil {
-		log.Error("create database", zap.String("error", err.Error()))
-		return nil, err
-	}
-	log.Info("database created")*/
-
 	_, err = db.Exec(`CREATE TABLE IF NOT EXISTS persons(
 		id SERIAL PRIMARY KEY,
 		name VARCHAR(255),
@@ -62,7 +48,7 @@ func New(log *zap.Logger, cfg *config.Config) (*Storage, error) {
 		log.Error("create table", zap.String("error", err.Error()))
 		return nil, err
 	}
-	log.Info("table persons created")
+	log.Info("table persons connected")
 
 	return &Storage{DB: db}, nil
 }
@@ -81,15 +67,17 @@ func (s *Storage) NewPerson(name, surname, patronymic string, age int, gender, n
 }
 
 func (s *Storage) ChangePerson(id int64, name, surname, patronymic string, age int, gender, nationality string) (int64, error) {
-	err := s.DB.QueryRow(`INSERT INTO persons (name, surname, patronymic, 
-		age, gender, nationality)
-		VALUES ($1, $2, $3, $4, $5, $6) RETURNING id`,
-		name, surname, patronymic, age, gender, nationality).Scan(&id)
+	var rid int64
+	err := s.DB.QueryRow(`UPDATE persons 
+				SET name = $1, surname = $2, patronymic = $3, 
+				age = $4, gender = $5, nationality = $6
+				WHERE id = $7 RETURNING id`,
+		name, surname, patronymic, age, gender, nationality, id).Scan(&rid)
 	if err != nil {
 		return 0, err
 	}
 
-	return id, nil
+	return rid, nil
 }
 
 func (s *Storage) DeletePerson(id int64) error {
