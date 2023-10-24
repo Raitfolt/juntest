@@ -6,8 +6,35 @@
 
 API
 
-	router.Post("/add", add.New(log, db))
-	router.Post("/delete", del.Delete(log, db))
-	router.Get("/all", all.List(log, db))
-	router.Post("/change", change.Change(log, db))
+GET /all 
+Возвращает список всех записей из таблицы persons
 
+POST /delete 
+Удаляет запись по id в теле должен быть json вида 
+	{
+	"id":5
+	}
+
+POST /add 
+Добавляет запись в таблицу person, дополняя запись данными из других сервисов.
+В теле должен быть json вида 
+	{
+	"name": "Dmitriy",
+	"surname": "Ushakov",
+	"patronymic": "Vasilevich" // необязательно
+	}
+
+POST /change
+Изменяет запись в таблице person. Должен быть указан id изменяемой записи.
+Данный метод не имеет проверок и не берёт данные из открытых источников, поэтому указывать
+можно любые данные. Например, в поле "gender" можно указать хоть "cucumber" 
+В теле должен быть json вида
+	{
+	"id": 2
+	"name": "Dmitriy",
+	"surname": "Ushakov",
+	"patronymic": "Vasilevich",
+	"age": 45,
+	"gender": "male",
+	"nationality": "RU"
+	}
