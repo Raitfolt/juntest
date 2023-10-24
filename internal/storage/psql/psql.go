@@ -64,30 +64,17 @@ func New(log *zap.Logger, cfg *config.Config) (*Storage, error) {
 	return &Storage{DB: db}, nil
 }
 
-func (s *Storage) NewPerson(name, surname, patronymic string) (int64, error) {
+func (s *Storage) NewPerson(name, surname, patronymic string, age int, gender, nationality string) (int64, error) {
 	var id int64
-	err := s.DB.QueryRow("INSERT INTO persons (name, surname, patronymic) VALUES ($1, $2, $3) RETURNING id",
-		name, surname, patronymic).Scan(&id)
+	err := s.DB.QueryRow(`INSERT INTO persons (name, surname, patronymic, 
+		age, gender, nationality)
+		VALUES ($1, $2, $3, $4, $5, $6) RETURNING id`,
+		name, surname, patronymic, age, gender, nationality).Scan(&id)
 	if err != nil {
 		return 0, err
 	}
 
 	return id, nil
-}
-
-func (s *Storage) UpdateGender(id int, gender string) error {
-	_, err := s.DB.Exec("UPDATE persons SET gender = $1 WHERE id = $2", gender, id)
-	return err
-}
-
-func (s *Storage) UpdateAge(id int, age int) error {
-	_, err := s.DB.Exec("UPDATE persons SET age = $1 WHERE id = $2", age, id)
-	return err
-}
-
-func (s *Storage) UpdateNationality(id int, nationality string) error {
-	_, err := s.DB.Exec("UPDATE persons SET nationality = $1 WHERE id = $2", nationality, id)
-	return err
 }
 
 func (s *Storage) DeletePerson(id int) error {
