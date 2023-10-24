@@ -376,3 +376,19 @@
 {"level":"info","timestamp":"2023-10-24T14:22:38.842+0500","msg":"record added","id":5}
 {"level":"info","timestamp":"2023-10-24T14:22:40.160+0500","msg":"get all persons"}
 {"level":"info","timestamp":"2023-10-24T14:22:40.165+0500","msg":"list of persons loaded"}
+{"level":"info","timestamp":"2023-10-24T15:33:51.936+0500","msg":"save logs to","path":"/home/novam/go/src/github.com/Raitfolt/juntest/logs/"}
+{"level":"info","timestamp":"2023-10-24T15:33:51.936+0500","msg":"logger loaded"}
+{"level":"info","timestamp":"2023-10-24T15:33:51.937+0500","msg":"create new storage connect"}
+{"level":"info","timestamp":"2023-10-24T15:33:51.937+0500","msg":"postgresql","connection string":"host=0.0.0.0 port =5432 user=pguser password=pgpass sslmode=disable"}
+{"level":"info","timestamp":"2023-10-24T15:33:52.026+0500","msg":"table persons connected"}
+{"level":"info","timestamp":"2023-10-24T15:33:52.026+0500","msg":"database loaded"}
+{"level":"info","timestamp":"2023-10-24T15:33:52.026+0500","msg":"starting server","address":"0.0.0.0:8080"}
+{"level":"info","timestamp":"2023-10-24T15:33:55.410+0500","msg":"get all persons"}
+{"level":"info","timestamp":"2023-10-24T15:33:55.421+0500","msg":"list of persons loaded"}
+{"level":"info","timestamp":"2023-10-24T15:36:14.005+0500","msg":"change person information"}
+{"level":"error","timestamp":"2023-10-24T15:36:14.005+0500","msg":"unmarshall body","error":"json: cannot unmarshal string into Go struct field Person.id of type int"}
+{"level":"info","timestamp":"2023-10-24T15:36:30.228+0500","msg":"change person information"}
+{"level":"info","timestamp":"2023-10-24T15:36:30.229+0500","msg":"body decoded","name":"notEgor","surname":"notPetrov"}
+{"level":"info","timestamp":"2023-10-24T15:36:30.254+0500","msg":"record changed","id":1}
+{"level":"info","timestamp":"2023-10-24T15:37:14.764+0500","msg":"get all persons"}
+{"level":"info","timestamp":"2023-10-24T15:37:14.768+0500","msg":"list of persons loaded"}

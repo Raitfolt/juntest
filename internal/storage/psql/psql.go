@@ -14,7 +14,7 @@ type Storage struct {
 }
 
 type Person struct {
-	ID          string `json:"id" validate:"required"`
+	ID          int    `json:"id" validate:"required"`
 	Name        string `json:"name" validate:"required"`
 	Surname     string `json:"surname" validate:"required"`
 	Patronymic  string `json:"patronymic,omitempty"`
@@ -66,7 +66,7 @@ func (s *Storage) NewPerson(name, surname, patronymic string, age int, gender, n
 	return id, nil
 }
 
-func (s *Storage) ChangePerson(id int64, name, surname, patronymic string, age int, gender, nationality string) (int64, error) {
+func (s *Storage) ChangePerson(id int, name, surname, patronymic string, age int, gender, nationality string) (int64, error) {
 	var rid int64
 	err := s.DB.QueryRow(`UPDATE persons 
 				SET name = $1, surname = $2, patronymic = $3, 

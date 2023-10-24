@@ -6,6 +6,7 @@ import (
 	"github.com/Raitfolt/juntest/config"
 	"github.com/Raitfolt/juntest/internal/httpServer/handlers/add"
 	"github.com/Raitfolt/juntest/internal/httpServer/handlers/all"
+	"github.com/Raitfolt/juntest/internal/httpServer/handlers/change"
 	"github.com/Raitfolt/juntest/internal/httpServer/handlers/del"
 	"github.com/Raitfolt/juntest/internal/logger"
 	"github.com/Raitfolt/juntest/internal/storage/psql"
@@ -36,6 +37,7 @@ func main() {
 	router.Post("/add", add.New(log, db))
 	router.Post("/delete", del.Delete(log, db))
 	router.Get("/all", all.List(log, db))
+	router.Post("/change", change.Change(log, db))
 
 	address := cfg.Host + ":" + cfg.Port
 	srv := &http.Server{
